@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf5ee;
+  --color-ink: #201b17;
+  --color-surface: #241f1a;
+  --color-rose: #b8654a;
+  --color-rose-light: #e3b9a1;
+  --color-muted: #a89b8e;
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-weight: 300;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-gradient-rose {
+  background: linear-gradient(120deg, #d68e6f, #b8654a 55%, #8f4530);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.divider-orn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.divider-orn::before {
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+.divider-orn-center::before,
+.divider-orn-center::after {
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.4;
+}
