@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
-import FacebookFeed from "./components/FacebookFeed";
+import Gallery from "./components/Gallery";
 import Reviews from "./components/Reviews";
 import Visit from "./components/Visit";
 import Book from "./components/Book";
@@ -15,7 +15,7 @@ export default function App() {
       <Hero />
       <About />
       <Services />
-      <FacebookFeed />
+      <Gallery />
       <Reviews />
       <Visit />
       <Book />
